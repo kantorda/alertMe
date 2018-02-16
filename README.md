@@ -32,7 +32,7 @@ To run on multiple processes, call it from the command line as follows:
 ./alertMe.py inputFile outputFile
 
 'inputFile' should be a text file containing the processes you want run and monitored.
-The first line should be an integer referencing the number of processes in the file.
+The first line should be an integer referencing the maximum number of processes from the file you want running at a time.
 Each subsequent line should contain the same data and format as calling a single process (./exec [args]).
 
 'outputFile' should be a text file to write logs to.
