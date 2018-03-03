@@ -32,5 +32,5 @@ if __name__ == "__main__":
     execPath = getPath()
     process = runCmd(execPath)
     if process is not None:
-        print(process.name)
-        print(process.pid)
+        process.wait()
+        sendNotification("process with pid {} has terminated".format(process.pid))
